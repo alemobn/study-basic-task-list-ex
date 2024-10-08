@@ -9,8 +9,8 @@ function createItem() {
 
 function createRemoveBtn() {
     const removeBtn = document.createElement('button');
-    removeBtn.innerText = 'Apagar';
-    removeBtn.setAttribute('class', 'remove');
+    removeBtn.innerText = '-';
+    removeBtn.setAttribute('class', 'remove btn-task');
     return removeBtn;
 }
 
@@ -51,7 +51,7 @@ function saveTasks() {
 
     for (let ts of taskItems) {
         let textTask = ts.innerText;
-        textTask = textTask.replace('Apagar', '').trim();
+        textTask = textTask.replace('-', '').trim();
         taskItemsList.push(textTask);
     }
 
