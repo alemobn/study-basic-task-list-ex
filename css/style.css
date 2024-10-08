@@ -48,6 +48,10 @@ body {
     text-align: center;
 }
 
+.container .tasks {
+    text-align: start;
+}
+
 .footer {
     padding: 20px;
     background-color: var(--container-color);
